@@ -16,7 +16,7 @@
 	<div id="drag" class="cv instaFade wrap">
 		<div class="mainDetails">
 			<div id="headshot">
-				<img src="./imgs/logo.png" alt="khalifa" />
+				<img id="loading" src="./imgs/logo.png" onmouseover="hover(this);" onmouseout="unhover(this);">
 			</div>
 
 			<div id="name">
@@ -31,7 +31,7 @@
 				<ul>
 					<li>
 						<i class="fa fa-map-marker" aria-hidden="true"></i>
-						<a href="#" onclick="getLocation()">Get My Location</a>
+						<a href="#" onclick="getLocation()">Get Location Between us</a>
 					</li>
 					<li>
 						<i class="fa fa-envelope-open" aria-hidden="true"></i>
@@ -180,6 +180,7 @@
 
 	<script type="text/javascript" src="./js/dragCv.js"></script>
 	<script src="./js/geolocation.js"></script>
+	<script src="./js/changeHeadshot.js"></script>
 	<script src="./js/googleCharts.js"></script>
 </body>
 

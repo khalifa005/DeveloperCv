@@ -89,19 +89,21 @@ p {
   color: #0155aa;
 }
 
+#name h2:hover {
+  padding: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #e28a44;
+}
+
 #name h1 {
   animation-name: changeNameColor;
   animation-duration: 2s;
 }
 
-@@keyframes changeNameColor {
-  from {
-    color: rgb(34, 34, 34);
-  }
-
-  to {
-    color: #0d85ff;
-  }
+#name h1:hover {
+  padding: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #cf8a05;
 }
 
 #mainArea {
@@ -118,11 +120,28 @@ p {
   width: 100%;
   height: auto;
   border-radius: 50px;
+  transition: width 0.5s;
+}
+
+#loading {
+  -webkit-animation: rotation 6s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
 
 #name {
   float: left;
   margin-top: -20px;
+  transition: padding 0.5s, color 0.5, font-family 0.5s;
+  transition: ease-in-out;
 }
 
 #contactDetails {
@@ -138,6 +157,13 @@ p {
 #contactDetails ul li {
   margin-bottom: 3px;
   color: #444;
+  transition: font-size 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+#contactDetails ul li:hover {
+  font-size: larger;
 }
 
 #contactDetails ul li a {
@@ -147,6 +173,12 @@ p {
 
 section {
   border-top: 1px solid #dedede;
+  transition: wfont-size 0.4s;
+  transition-timing-function: ease-in;
+}
+
+section :hover {
+  font-size: 20px;
 }
 
 section:first-child {
