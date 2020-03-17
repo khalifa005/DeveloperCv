@@ -1,13 +1,20 @@
+body {
+  background: #fff;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 16px;
+  color: #222;
+  border: 5px #444;
+}
 
-body {background: #fff; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222; border: 5px #444; }
-
-.clear {clear: both;}
+.clear {
+  clear: both;
+}
 
 p {
-	font-size: 1em;
-	line-height: 1.4em;
-	margin-bottom: 20px;
-	color: #444;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  color: #444;
 }
 
 .cv {
@@ -37,15 +44,16 @@ p {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+#piechart {
+  margin-left: 0px;
+  float: left;
+  padding-left: 0px;
+}
 
-#piechart{
-	margin-left: 0px;
-	float: left;
-	padding-left: 0px;
+#locationButton {
+  border-radius: 200%;
 }
-#locationButton{
-	border-radius: 200%;
-}
+
 #contactDetails ul li a:hover {
   color: #cf8a05;
 }
@@ -55,165 +63,168 @@ p {
 }
 
 .mainDetails {
-	padding: 25px 35px;
-	border-bottom: 2px solid #cf8a05;
-	background: #ededed;
-	margin-bottom: 5px;
+  padding: 25px 35px;
+  border-bottom: 2px solid #cf8a05;
+  background: #ededed;
+  margin-bottom: 5px;
 }
 
 #name p {
   color: #cf8a05;
-	font-size: 20px;
-	padding-left: 15px;
+  font-size: 20px;
+  padding-left: 15px;
 }
 
 #name h1 {
-	font-size: 2.5em;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	margin-bottom: -36px;
-	color: #00366c;
+  font-size: 2.5em;
+  font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  margin-bottom: -36px;
+  color: #00366c;
 }
 
 #name h2 {
-	font-size: 2em;
-	margin-left: 2px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	color: #0155aa;
+  font-size: 2em;
+  margin-left: 2px;
+  font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  color: #0155aa;
 }
 
-#name h1{
-	animation-name: changeNameColor;
-	animation-duration: 2s;
+#name h1 {
+  animation-name: changeNameColor;
+  animation-duration: 2s;
 }
 
 @@keyframes changeNameColor {
-	from{color: rgb(34, 34, 34);}
-	to{color:#0d85ff; }
+  from {
+    color: rgb(34, 34, 34);
+  }
+
+  to {
+    color: #0d85ff;
+  }
 }
+
 #mainArea {
-	padding: 0 40px;
+  padding: 0 40px;
 }
 
 #headshot {
-	width: 12.5%;
-	float: left;
-	margin-right: 30px;
+  width: 12.5%;
+  float: left;
+  margin-right: 30px;
 }
 
 #headshot img {
-	width: 100%;
-	height: auto;
-	border-radius: 50px;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
 }
 
 #name {
-	float: left;
-	margin-top: -20px;
+  float: left;
+  margin-top: -20px;
 }
 
 #contactDetails {
-	float: right;
+  float: right;
 }
 
 #contactDetails ul {
-	list-style-type: none;
-	font-size: 0.9em;
-	margin-top: 2px;
+  list-style-type: none;
+  font-size: 0.9em;
+  margin-top: 2px;
 }
 
 #contactDetails ul li {
-	margin-bottom: 3px;
-	color: #444;
+  margin-bottom: 3px;
+  color: #444;
 }
 
-
 #contactDetails ul li a {
-	color: #444;
-	text-decoration: none;
+  color: #444;
+  text-decoration: none;
 }
 
 section {
-	border-top: 1px solid #dedede;
+  border-top: 1px solid #dedede;
 }
 
 section:first-child {
-	border-top: 0;
+  border-top: 0;
 }
 
 section:last-child {
-	padding: 20px 0 10px;
+  padding: 20px 0 10px;
 }
 
 .sectionTitle {
-	float: left;
-	width: 25%;
+  float: left;
+  width: 25%;
 }
 
 .sectionContent {
-	float: right;
-	width: 72.5%;
-	padding-top: 8px;
+  float: right;
+  width: 72.5%;
+  padding-top: 8px;
 }
 
 .sectionTitle h1 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-style: italic;
-	font-size: 1.5em;
-	color: #cf8a05;
+  font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
+  color: #cf8a05;
 }
 
 .sectionContent h2 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
-	margin-bottom: -10px;
+  font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: -10px;
 }
 
 .sectionContent a {
-	text-decoration: none;
-	color:#0c1e86;
+  text-decoration: none;
+  color: #0c1e86;
 }
+
 /* If the screen size is 601px or less, set the cv div   */
 @media only screen and (max-width: 601px) {
-	#cv {
-		margin: 10px auto;
-	}
+  #cv {
+    margin: 10px auto;
+  }
 
+  #name, #contactDetails {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 
-	#name, #contactDetails {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
+  .sectionTitle, .sectionContent {
+    float: none;
+    width: 100%;
+  }
 
-	.sectionTitle, .sectionContent {
-		float: none;
-		width: 100%;
-	}
+  .sectionTitle {
+    margin-left: -2px;
+    font-size: 1.25em;
+  }
 
-	.sectionTitle {
-		margin-left: -2px;
-		font-size: 1.25em;
-	}
+  .instaFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-timing-function: ease-in;
+    animation-name: reset, fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+  }
 
-	.instaFade {
-	  -webkit-animation-name: reset, fade-in;
-	  -webkit-animation-duration: 1.5s;
-	  -webkit-animation-timing-function: ease-in;
+  #mainArea {
+    padding: 0 25px;
+  }
 
-	  -moz-animation-name: reset, fade-in;
-	  -moz-animation-duration: 1.5s;
-	  -moz-animation-timing-function: ease-in;
-
-	  animation-name: reset, fade-in;
-	  animation-duration: 1.5s;
-	  animation-timing-function: ease-in;
-	}
-
-	#mainArea {
-		padding: 0 25px;
-	}
-
-	#name h1 {
-		line-height: .8em;
-		margin-bottom: 4px;
-}
+  #name h1 {
+    line-height: .8em;
+    margin-bottom: 4px;
+  }
